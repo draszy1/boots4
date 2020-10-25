@@ -10,7 +10,7 @@ public class Item2Controller {
     @GetMapping(path = "/item2")
     public ModelAndView getItem2() {
         ModelAndView modelAndView = new ModelAndView("item2");
-        modelAndView.addObject("plotData", "[12, 19, 3, 5, 2, 3]");
+        modelAndView.addObject("plotData", "5 10 15 20 25 30");
 
         return modelAndView;
     }

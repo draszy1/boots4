@@ -2,12 +2,13 @@ package io.draszy1.boots4.main;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class MainController {
 
     @GetMapping(path = "/")
-    public String getIndex() {
-        return "index";
+    public ModelAndView getIndex() {
+        return new ModelAndView("index");
     }
 }
